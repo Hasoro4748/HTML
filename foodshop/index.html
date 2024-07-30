@@ -179,25 +179,44 @@
       float: left;
       box-sizing: border-box;
     }
+    main > .go > article > .banner {
+    position: relative;
+    float: left;
+}
+    main > .go > article > .banner > a {
+    position: absolute;
+    left: 26px;
+    top: 36px;
+}
+    main>.go>article>.banner>a .category {
+      font-weight: bold;
+      font-size: 16px;
+      color: #ff6312;
+    }
 
-    main .go>article>div>a>img {
-      margin-left: 25px;
-      margin-top: 140px;
+    main>.go>article>.banner>a .title {
+      font-size: 24px;
+      color: #fcfffd;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      line-height: 30px;
+    }
+
+    main>.go>article>.banner>a .title>i {
+      display: block;
+      margin-top: 24px;
+      font-size: 14px;
     }
 
     main>.go>article>div:nth-child(1) {
-      background-image: url("./images/main_go_banner_bg1.jpg");
+      background-image: url("./images/main_go_bg1.png");
       width: 412px;
       height: 450px;
     }
 
-    main .go>article>div:nth-child(1)>a>img {
-      margin-left: 35px;
-      margin-top: 240px;
-    }
 
     main>.go>article>div:nth-child(2) {
-      background-image: url("./images/main_go_banner_bg2.jpg");
+      background-image: url("./images/main_go_bg2.png");
       width: 322px;
       height: 220px;
       margin-left: 11px;
@@ -209,14 +228,14 @@
     }
 
     main>.go>article>div:nth-child(3) {
-      background-image: url("./images/main_go_banner_bg3.jpg");
+      background-image: url("./images/main_go_bg3.png");
       float: right;
       width: 322px;
       height: 220px;
     }
 
     main>.go>article>div:nth-child(4) {
-      background-image: url("./images/main_go_banner_bg4.jpg");
+      background-image: url("./images/main_go_bg4.png");
       width: 322px;
       height: 220px;
       margin-left: 11px;
@@ -224,7 +243,7 @@
     }
 
     main>.go>article>div:nth-child(5) {
-      background-image: url("./images/main_go_banner_bg5.jpg");
+      background-image: url("./images/main_go_bg5.png");
       float: right;
       width: 322px;
       height: 220px;
@@ -489,11 +508,62 @@
       </section>
       <section class="go">
         <article>
-          <div><a href="#"><img src="./images/main_go_ico.png" alt=""></a></div>
-          <div><a href="#"><img src="./images/main_go_ico.png" alt=""></a></div>
-          <div><a href="#"><img src="./images/main_go_ico.png" alt=""></a></div>
-          <div><a href="#"><img src="./images/main_go_ico.png" alt=""></a></div>
-          <div><a href="#"><img src="./images/main_go_ico.png" alt=""></a></div>
+          <div class="banner banner1">
+            <a href="#">
+              <span class="category">생활야채</span>
+              <p class="title">
+                1일 1아채<br>
+                건강한 생활습관
+
+                <i>
+                  아삭아삭 건강에도 좋은<br>
+                  야채를 1일 1야채로<br>
+                  생활에 활기를 느껴보세요!
+                </i>
+              </p>
+              <img src="./images/main_go_ico.png" alt="1일1야채 건강한 생활습관">
+            </a>
+          </div>
+          <div class="banner banner2">
+            <a href="#">
+              <span class="category">특별이벤트</span>
+              <p class="title dark">
+                SHOP에서 진행하는<br>
+                특별이벤트!
+              </p>
+              <img src="./images/main_go_ico.png" alt="SHOP에서 진행하는 특별이벤트!">
+            </a>
+          </div>
+          <div class="banner banner3">
+            <a href="#">
+              <span class="category">하루할인</span>
+              <p class="title">
+                오늘의<br>
+                할인상품!
+              </p>
+              <img src="./images/main_go_ico.png" alt="오늘의 할인상품!">
+            </a>
+          </div>
+          <div class="banner banner4">
+            <a href="#">
+              <span class="category">프리미엄</span>
+              <p class="title">
+                SHOP에서 인증하는<br>
+                프리미엄 상품
+              </p>
+              <img src="./images/main_go_ico.png" alt="SHOP에서 인증하는 프리미엄상품">
+            </a>
+          </div>
+          <div class="banner banner5">
+            <a href="#">
+              <span class="category">인기상품</span>
+              <p class="title dark">
+                SHOP의<br>
+                인기상품
+              </p>
+              <img src="./images/main_go_ico.png" alt="SHOP의 인기상품">
+            </a>
+          </div>
         </article>
       </section>
       <section class="oneday">
