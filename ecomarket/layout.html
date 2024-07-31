@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoMarket::layout</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      font: 12px '돋움';
+    }
+    ul, ol {
+      list-style: none;
+    }
+    a{
+      text-decoration: none;
+      color: #111;
+    }
+    input,textarea{
+      outline: none;
+    }
+    #wrapper{
+      width: 100%;
+      height: auto;
+    }
+    header{
+      width: 100%;
+      height: auto;
+      border: 1px solid black;
+      box-sizing: border-box;
+    }
+    header > div {
+      width: 100%;
+      border: 1px solid blue;
+      box-sizing: border-box;
+    }
+    header > div:nth-child(1){
+      height: 45px;
+    }
+    header > div:nth-child(2){
+      height: 110px;
+    }
+    header > div:nth-child(3){
+      height: 45px;
+    }
+    header > div > div {
+      width: 1126px;
+      height: 100%;
+      border: 1px solid orange;
+      margin: 0 auto;
+    }    
+    header > div > article {
+      width: 1126px;
+      height: 100%;
+      border: 1px solid orange;
+      margin: 0 auto;
+    }    
+    header > div > nav {
+      width: 1126px;
+      height: 100%;
+      border: 1px solid orange;
+      margin: 0 auto;
+    }    
+    main {
+      width: 100%;
+      height: auto;
+      border: 1px solid blue;
+      box-sizing: border-box;
+    }
+    main > section {
+      width: 100%;
+      height: auto;
+      padding: 40px 0;
+      box-sizing: border-box;
+      border: 1px solid green;
+    }
+    main > section > article{
+      width: 1126px;
+      height: 100%;
+      margin: 0 auto;
+      border: 1px solid orange;
+    }
+    .banner {
+      height: 480px;
+    }
+    .new > article {
+      width: 1126px;
+      height: 480px;
+      margin: 0 auto;
+      border: 1px solid orange;
+    }
+    .new {
+
+    }
+    .new > article > div{
+      float: left;
+      width: 345px;
+      border: 1px solid salmon;
+      box-sizing: border-box;
+    }
+    .new > article > div:nth-child(1){
+      height: 100%;
+      width: 434px;
+      border: 1px solid salmon;
+      box-sizing: border-box;
+    }
+    .new > article > div:nth-child(2){
+      height: 50%;
+      border: 1px solid salmon;
+      box-sizing: border-box;
+    }
+    .new > article > div:nth-child(3){
+      height: 50%;
+      border: 1px solid salmon;
+      box-sizing: border-box;
+    }
+    .new > article > div:nth-child(4){
+      height: 50%;
+      border: 1px solid salmon;
+      box-sizing: border-box;
+    }
+    .new > article > div:nth-child(5){
+      height: 50%;
+      border: 1px solid salmon;
+      box-sizing: border-box;
+    }
+    main > section:nth-child(3) {
+    height: 620px;
+    }
+    .master > article > div{
+      float: left;
+      width: 25%;
+      height: 334px;
+      border: 1px solid salmon;
+      box-sizing: border-box;
+    }
+    .organic_banner {
+      height: 220px;
+    }
+    .organic > article {
+      height: 800px;
+    }
+    .organic > article > div{
+      float: left;
+      width: 25%;
+      height: 50%;
+      border: 1px solid salmon;
+      box-sizing: border-box;
+    }
+    .grain_banner {
+      height: 220px;
+    }
+    .grain > article {
+      height: 800px;
+    }
+    .grain > article > div{
+      float: left;
+      width: 25%;
+      height: 50%;
+      border: 1px solid salmon;
+      box-sizing: border-box;
+    }
+    footer{
+      width: 100%;
+      height: auto;
+      border: 1px solid brown;
+      box-sizing: border-box;
+    }
+    footer > div {
+      width: 1126px;
+      height: 210px;
+      border: 1px solid green;
+      box-sizing: border-box;
+      margin: 0 auto;
+    }
+
+  </style>
+</head>
+<body id="wrapper">
+  <header>
+    <div>
+      <div></div>
+    </div>
+    <div>
+      <article></article>
+    </div>
+    <div>
+      <nav></nav>
+    </div>
+  </header>
+  <main>
+    <section class="banner">
+        <article></article>
+    </section>
+    <section class="new">
+        <article>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+        </article>
+    </section>
+    <section class="master">
+        <article>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+        </article>
+    </section>            
+    
+    <section class="organic_banner"></section>
+    <section class="organic">                
+        <article class="gallary">                    
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+        </article>
+    </section>            
+    
+    <section class="grain_banner"></section>
+    <section class="grain">
+        <article class="gallary">                    
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+        </article>
+    </section>            
+</main>
+  <footer>
+    <div></div>
+  </footer>
+</body>
+</html>
